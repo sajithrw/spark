@@ -78,6 +78,6 @@ Show result<br>
 Sql cache table (eagerly)<br>
 `sql("CACHE TABLE Companies")`
 
-Sql lazy cache table__
+Sql lazy cache table<br>
 `sql("CACHE LAZY TABLE Companies")`
 
