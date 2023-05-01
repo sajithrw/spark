@@ -1,7 +1,7 @@
 ## Spark SQL cheat sheet for command line operations
 ### all the examples use SCALA language and spark-shell to perform command.
 
-Need to import sqlContext in to spark session before using__
+Need to import sqlContext in to spark session before using<br>
 `import spark.sqlContext`
 
 Import implicits from sqlContext__
