@@ -17,7 +17,8 @@ public class SparkHome {
         JavaSparkContext sparkContext = new JavaSparkContext(conf);
 
         JavaRDD<Double> javaRDD = sparkContext.parallelize(inputData);
-
+        
+        // closing spark context
         sparkContext.close();
     }
 }
