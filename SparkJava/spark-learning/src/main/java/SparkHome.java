@@ -18,6 +18,17 @@ public class SparkHome {
 
         JavaRDD<Double> javaRDD = sparkContext.parallelize(inputData);
 
+        /**
+         * reduce function applies passed function to all nodes until it has a single value as the result.
+         * Later it shuffles multiple nodes and take individual results into one node. Then applies the same function
+         * to obtain a single result.
+         *
+         * Lambda function also accepts typed variables, though it is not necessary here as JavaRDD<Double> defines
+         * variable type.
+         */
+        Double result = javaRDD.reduce(Double::sum);
+        System.out.println("Reduced result: " + result);
+
         sparkContext.close();
     }
 }
