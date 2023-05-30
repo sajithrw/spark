@@ -1,2 +1,2 @@
 # spark tutotrials
-Spark with Java
+## Spark terminologies and application using Apache Spark with Java
