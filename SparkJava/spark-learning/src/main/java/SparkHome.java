@@ -25,6 +25,8 @@ public class SparkHome {
          *
          * Lambda function also accepts typed variables, though it is not necessary here as JavaRDD<Double> defines
          * variable type.
+         * 
+         * Object and function can also be passed to reduce function.
          */
         Double result = javaRDD.reduce(Double::sum);
         System.out.println("Reduced result: " + result);
